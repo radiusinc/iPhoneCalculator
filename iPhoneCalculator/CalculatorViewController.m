@@ -39,6 +39,11 @@
     
     button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame = CGRectMake(x, y, buttonWidth, buttonHeight);
+    button.accessibilityLabel = aTitle;
+    
+    button.layer.borderColor = [[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] CGColor];
+    button.layer.borderWidth = 1.0;
+    button.layer.cornerRadius = 10.0f;
     
     [button setTitle:aTitle forState:UIControlStateNormal];
     
@@ -56,7 +61,7 @@
     self.resultText = [NSMutableString stringWithString:@"0"];
     
     // Add a nice background color to our view
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 
     // We add a label to the top that will display the results
     self.resultLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, TEXTAREA_WIDTH, TEXTAREA_HEIGHT)];
@@ -64,6 +69,7 @@
     resultLabel.text = resultText; // default label
     resultLabel.textAlignment = UITextAlignmentRight;
     resultLabel.font = [UIFont systemFontOfSize:24];
+    resultLabel.accessibilityLabel = @"result";
     
     // Add it to the view
     [self.view addSubview:resultLabel];
@@ -79,13 +85,13 @@
     
     [self addButtonWithTitle:@"AC"      tag:kButtonAC           row:1 column:0 width:1 height:1];
     [self addButtonWithTitle:@"\u00B1"  tag:kButtonChangeSign   row:1 column:1 width:1 height:1];
-    [self addButtonWithTitle:@"\u00F7"  tag:kButtonDivide       row:1 column:2 width:1 height:1];
-    [self addButtonWithTitle:@"\u00D7"  tag:kButtonMultiply     row:1 column:3 width:1 height:1];
+    [self addButtonWithTitle:@"/"       tag:kButtonDivide       row:1 column:2 width:1 height:1];
+    [self addButtonWithTitle:@"*"       tag:kButtonMultiply     row:1 column:3 width:1 height:1];
     
     [self addButtonWithTitle:@"7"       tag:kButtonSeven        row:2 column:0 width:1 height:1];
     [self addButtonWithTitle:@"8"       tag:kButtonEight        row:2 column:1 width:1 height:1];
     [self addButtonWithTitle:@"9"       tag:kButtonNine         row:2 column:2 width:1 height:1];
-    [self addButtonWithTitle:@"\u2212"  tag:kButtonSubtract     row:2 column:3 width:1 height:1];
+    [self addButtonWithTitle:@"-"       tag:kButtonSubtract     row:2 column:3 width:1 height:1];
     
     [self addButtonWithTitle:@"4"       tag:kButtonFour         row:3 column:0 width:1 height:1];
     [self addButtonWithTitle:@"5"       tag:kButtonFive         row:3 column:1 width:1 height:1];

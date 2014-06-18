@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B8C2D597-86B0-4B96-99C3-6702B46F62F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iPhoneCalculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CC13F3B9-F16A-4666-A377-BBF68C120DFD</key>
+		<string>ssh://github.com/NatashaTheRobot/iPhoneCalculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPhoneCalculator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CC13F3B9-F16A-4666-A377-BBF68C120DFD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/NatashaTheRobot/iPhoneCalculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC13F3B9-F16A-4666-A377-BBF68C120DFD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC13F3B9-F16A-4666-A377-BBF68C120DFD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPhoneCalculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
