@@ -1,8 +1,9 @@
 Feature: Calculate numbers
   As a calculator user
-  I want to compute numbers fast
-  So I can go back to business
+  I want to compute numbers accurately
+  So I can go back to business fast
 
+# predefined steps example
 @add
 Scenario: Add two numbers
   Given I am on the Welcome Screen
@@ -11,6 +12,7 @@ Scenario: Add two numbers
   And I touch the "2" button
   Then I see the text "4"
 
+# simple custom steps examples
 @multiply
 Scenario: Multiply two numbers
   Given the input "2*2"
@@ -35,8 +37,9 @@ Scenario: Do a complex calculation
   When the calculator is run
   Then the output should be "40"
 
+# complex step example
 @multiple
-Scenario Outline: Mutliple Calculations another
+Scenario Outline: Caculate Expressions
     Given the table input <Input>
     When the calculator is run
     Then the output from table should be <Output>

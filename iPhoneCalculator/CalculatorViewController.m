@@ -61,7 +61,7 @@
     self.resultText = [NSMutableString stringWithString:@"0"];
     
     // Add a nice background color to our view
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:237/255.0 green:223/255.0 blue:255/255.0 alpha:1];
 
     // We add a label to the top that will display the results
     self.resultLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, TEXTAREA_WIDTH, TEXTAREA_HEIGHT)];
