@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F99A3061B1CBBB30092DF42 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99A3041B1CBB9C0092DF42 /* Security.framework */; };
 		4cd3e33c4d6db882c162dda5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F716C0143200FC00A82FC5 /* CoreGraphics.framework */; };
 		4ce02c505a68dea5b7a08d20 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11648051c03f502d127cf276 /* calabash.framework */; };
 		4daed2f76d37cfd3173d5747 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F716BC143200FC00A82FC5 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		11648051c03f502d127cf276 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		1F99A3041B1CBB9C0092DF42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		55F716B8143200FC00A82FC5 /* iPhoneCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F716BC143200FC00A82FC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55F716BE143200FC00A82FC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F99A3061B1CBBB30092DF42 /* Security.framework in Frameworks */,
 				4daed2f76d37cfd3173d5747 /* UIKit.framework in Frameworks */,
 				af420e327f81756b2f55ac29 /* Foundation.framework in Frameworks */,
 				4cd3e33c4d6db882c162dda5 /* CoreGraphics.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		55F716BB143200FC00A82FC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F99A3041B1CBB9C0092DF42 /* Security.framework */,
 				55F716BC143200FC00A82FC5 /* UIKit.framework */,
 				55F716BE143200FC00A82FC5 /* Foundation.framework */,
 				55F716C0143200FC00A82FC5 /* CoreGraphics.framework */,
