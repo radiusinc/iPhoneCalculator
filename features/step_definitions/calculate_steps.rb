@@ -8,12 +8,12 @@ Given(/^the input "(.*?)"$/) do |expression|
     inputs = expression.split(//)
     
     # then each array component is tapped
-    inputs.each {|input| tap input}
+    inputs.each {|input| tap_mark input }
 end
 
 
 When(/^the calculator is run$/) do
-    tap "="
+    tap_mark "="
 end
 
 
@@ -27,13 +27,13 @@ Then(/^the output should be "(.*?)"$/) do |expected_output|
     
     # compare the expected output (4 in this case)
     # with the text in the result label
-    assert actual_output.eql? expected_output
+    actual_output.should eq expected_output
 end
 
 
 Given(/^the table input "(.*?)"$/) do |input|
     inputs = input.split(//)
-    inputs.each {|input| tap input}
+    inputs.each {|input| tap_mark input}
 end
 
 # note that the regular expression now matches
@@ -48,5 +48,5 @@ Then(/^the output from table should be (-?\d+)$/) do |expected_output|
     
     # compare the expected output (4 in this case)
     # with the text in the result label
-    assert actual_output.eql? expected_output
+    actual_output.should eq expected_output
 end
