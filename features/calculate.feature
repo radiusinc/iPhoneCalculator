@@ -3,14 +3,15 @@ Feature: Calculate numbers
   I want to compute numbers accurately
   So I can go back to business fast
 
-# predefined steps example
+# predefined steps example 
 @add
 Scenario: Add two numbers
   Given I am on the Welcome Screen
   When I touch the "2" button
   And I touch the "+" button
   And I touch the "2" button
-  Then I see the text "4"
+  When the calculator is run
+  Then the output should be "4"
 
 # simple custom steps examples
 @multiply
